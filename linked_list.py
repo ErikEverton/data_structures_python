@@ -3,12 +3,18 @@ class Node:
         self.value = value
         self.next = None
     
+    def __repr__(self):
+        return f'{self.value}, {self.next}'
+    
 
 class LinkedList:
     def __init__(self, head) -> None:
         first_node = Node(head)
         self.head = first_node
         self.tail = first_node
+
+    def __repr__(self):
+        return f'[{self.head}]'
     
     def initial_insertion(self, value):
         new_node = Node(value)
@@ -75,3 +81,4 @@ while current:
     print(current.value)
     current = current.next
 
+print(list)
