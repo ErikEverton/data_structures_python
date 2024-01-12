@@ -76,7 +76,6 @@ list.intermediate_insertion(before=search, value=5)
 list.insertion_at_the_end(6)
 list.insertion_at_the_end(7)
 
-
 while current:
     print(current.value)
     current = current.next
