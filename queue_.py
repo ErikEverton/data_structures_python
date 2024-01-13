@@ -24,16 +24,28 @@ class Queue:
         if self.isEmpty():
             self.front = new_node
             return
+        
         current = self.front
         while current:
             if current.next is None:
-                current.next  = new_node
+                current.next = new_node
                 return
+            current = current.next
     
+    def dequeue(self):
+        self.front = self.front.next
+
+    def peek(self):
+        return self.front
 
 
 #Tests 
 
 queue = Queue()
-queue.enqueue(1)
+for n in range(0, 11):
+    queue.enqueue(n)
+
+for n in range(0, 6):
+    queue.dequeue()
+
 print(queue)
