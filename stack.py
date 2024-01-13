@@ -27,7 +27,7 @@ class Stack:
         return last_top.value
 
     def peek(self):
-        return self.top
+        return self.top.value
 
     def __repr__(self) -> str:
         return f'[{self.top.value}, {self.top.next}]'
@@ -44,5 +44,6 @@ for n in range(0, 10):
 for n in range(0, 5):
     stack.pop()
 
-print(stack.pop())
 print(stack)
+print(stack.pop())
+print(stack.peek())

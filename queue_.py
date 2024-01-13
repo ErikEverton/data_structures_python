@@ -36,7 +36,7 @@ class Queue:
         self.front = self.front.next
 
     def peek(self):
-        return self.front
+        return self.front.value
 
 
 #Tests 
@@ -49,3 +49,4 @@ for n in range(0, 6):
     queue.dequeue()
 
 print(queue)
+print(queue.peek())
