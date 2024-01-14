@@ -18,4 +18,5 @@ class HashMap(object):
         self.data[address].append(key, value)
         return self.data
 
-    
+    def __str__(self) -> str:
+        return "".join(str(item) for item in self.data)
