@@ -15,7 +15,7 @@ class HashMap(object):
 
         if not self.data[address]:
             self.data[address] = []
-        self.data[address].append(key, value)
+        self.data[address].append([key, value])
         return self.data
     
     def get(self, key):
