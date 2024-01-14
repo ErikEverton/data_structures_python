@@ -31,3 +31,15 @@ class HashMap(object):
         return "".join(str(item) for item in self.data)
     
 
+#some tests
+    
+hashmap = HashMap(10)
+
+hashmap.set("number", 10)
+hashmap.set("pão", "tá bom ent")
+hashmap.set("pizza", False)
+
+print(hashmap)
+print(hashmap.get("pizza"))
+print(hashmap.get("sahs"))
+
