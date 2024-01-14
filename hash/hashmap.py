@@ -10,5 +10,12 @@ class HashMap(object):
         
         return hash_value
     
-    
+    def set(self, key, value):
+        address = self._hash(key)
 
+        if not self.data[address]:
+            self.data[address] = []
+        self.data[address].append(key, value)
+        return self.data
+
+    
