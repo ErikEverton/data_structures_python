@@ -1,4 +1,4 @@
-#What are linked lists? 
+# What are linked lists? 
 
 A linked list is a sequence of cells. Each cell has an object and the address to the next cell. If the address of the next cell is None that means that the linked list ends there. The first cell in the linked list is called head and the last one is called tail.
 Each cell of the list is a node and a node consists of two fields one is the data and the other is a reference to the next node in the list.
